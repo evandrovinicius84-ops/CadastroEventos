@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://microsoft.com"
+             xmlns:x="http://microsoft.com"
+             x:Class="CadastroEventos.Views.CadastroPage"
+             Title="Novo Evento">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Cadastro de Evento" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10"/>
+
+            <Label Text="Nome do Evento:" FontAttributes="Bold" />
+            <Entry Text="{Binding Nome}" Placeholder="Ex: Workshop de .NET MAUI" />
+
+            <Label Text="Local do Evento:" FontAttributes="Bold" />
+            <Entry Text="{Binding Local}" Placeholder="Ex: Centro de Convenções" />
+
+            <Label Text="Data de Início:" FontAttributes="Bold" />
+            <DatePicker Date="{Binding DataInicio}" MinimumDate="2020-01-01" />
+
+            <Label Text="Data de Término:" FontAttributes="Bold" />
+            <DatePicker Date="{Binding DataTermino}" MinimumDate="2020-01-01" />
+
+            <Label Text="Número de Participantes:" FontAttributes="Bold" />
+            <Entry Text="{Binding NumeroParticipantes}" Keyboard="Numeric" Placeholder="Ex: 50" />
+
+            <Label Text="Custo por Participante (R$):" FontAttributes="Bold" />
+            <Entry Text="{Binding CustoPorParticipante}" Keyboard="Numeric" Placeholder="Ex: 29.90" />
+
+            <Button Text="Salvar e Ver Resumo" 
+                    Clicked="OnSalvarClicked" 
+                    Margin="0,20,0,0"
+                    BackgroundColor="#512BD4" 
+                    TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

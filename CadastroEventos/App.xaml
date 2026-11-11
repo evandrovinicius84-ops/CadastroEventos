@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://microsoft.com"
+             xmlns:x="http://microsoft.com"
+             xmlns:local="clr-namespace:CadastroEventos"
+             x:Class="CadastroEventos.App">
+
+    <!-- Um App.xaml minimalista e limpo para destravar o seu compilador -->
+    <Application.Resources>
+        <ResourceDictionary />
+    </Application.Resources>
+
+</Application>
+
+
